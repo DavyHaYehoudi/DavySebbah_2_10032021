@@ -1,0 +1,108 @@
+
+#container
+{
+    /*width: 1200px;*/
+    width: 100%;
+	max-width: 1200px;
+}
+
+header
+{
+    display: flex;
+}
+
+
+h1
+{
+    font-size: 16px;
+    display: flex;
+}
+
+#hebergementsMarseille
+{
+    background-color: #f2f2f2 ;
+    width: 60%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+.hebergements_simples
+{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.mini_bloc
+{
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 1px;
+    width: 157px;
+    height: 128px;
+}
+
+
+.image
+{
+    width: 150%;
+    height: 90%;
+    
+}
+
+.image img
+{
+    width: 66%;
+    height: 64%; 
+    border-top-left-radius:12px ;
+    border-top-right-radius: 12px;
+    padding-top: 3px;
+    padding-right: 1px;
+    padding-left: 1px;
+    object-fit: cover ;
+}
+
+h3
+{
+    font-size: 12px;
+    margin-top: 3px;
+    line-height: 8px;
+}
+
+
+.descriptif 
+{
+    font-size: 11px;
+    color: black;
+    padding-left: 8px;
+}
+
+.descriptif p
+{
+    line-height: 0px;
+}
+
+.etoilepleine
+{
+    color: #0065FC;
+    font-size: 8px;
+    padding-top: 10px;
+}
+
+.etoilevide
+{
+    color: rgb(221, 217, 217);
+    font-size: 8px;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+
+
+

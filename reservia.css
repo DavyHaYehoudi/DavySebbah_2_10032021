@@ -1,0 +1,323 @@
+
+#container
+{
+    width: 100%;
+	max-width: 1000px;
+    margin-left: 30px;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    width: 67px;
+    height: 29px;
+}
+
+nav ul
+{
+    display: flex;
+    
+}
+
+nav li 
+{
+	list-style: none;
+	padding-left: 30px;
+}
+
+#annonces h1
+{
+    font-size: 17px;
+    display: flex;
+    line-height: 6px;
+}
+
+#annonces h3
+{
+    font-size: 12px;
+    line-height: 6px;
+    font-weight: normal;
+}
+
+#recherches
+{
+    display: flex;
+    align-items :center;
+    border: 1px #f2f2f2 solid;
+    width: 278px;
+    border-radius: 10px;
+    
+    
+}
+
+.pointeur
+{
+    background-color:#f2f2f2 ;
+    font-size: 0.8em;
+    height: 23px;
+    width: 35px;
+    text-align: center; 
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding-top: 10px;   
+    
+}
+
+.champ
+{
+    height: 29px;
+    margin-right: 0;
+    border:hidden;
+    
+}
+
+.boutton
+{
+    height: 31px;
+    background-color:#0065FC;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    height: 23px;
+    width: 100px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    padding-top: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#filtres
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    line-height: 1px;
+   
+    
+}
+
+.filtre-rubrique
+{
+    display: flex;
+    align-items: center;
+    margin: 5px 8px 5px 8px;
+    border: 2px solid #d8d8d8;
+    border-radius: 3em;
+}
+
+
+.pictogramme
+{
+      height: 12px;
+      width: 12px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8px;
+      font-size: 0.7em;
+      color: #0065FC;
+      background-color: #DEEBFF;
+      border-radius: 2em;   
+      transform: scale(1.2);
+}
+
+
+/*#filtres span
+{
+    margin-right: 30px;
+}*/
+
+
+/*.filtre-rubrique h3
+{   
+    
+    padding-right: 40px;
+    padding-left: 0px;
+    
+}*/
+
+#filtres h3
+{
+    font-size: 0.9em;
+    margin-right: 10px;  
+    
+    
+}
+
+.onglet1
+{
+    width: 80px;
+    padding-left: 10px;
+    
+
+    
+}
+
+.onglet2
+{
+    width: 55px;
+    padding-left: 10px;
+    
+    
+
+}
+
+.onglet3
+{
+    width: 75px;
+    padding-left: 10px;
+
+
+}
+
+.onglet4
+{
+    width: 120px;
+    padding-left: 10px;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#informations
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+
+.i-infos
+{
+    padding: 4px 6px 3px 6px;
+    color: #0065FC;
+    font-size: 0.6em;
+    border: 2px solid #F2F2F2;
+    border-radius: 3em; 
+    
+}
+
+.texte-infos 
+{
+    font-size: 0.8em;
+    color: black;
+    font-weight: normal;
+    margin-left: 6px;
+    line-height: 1.5em;
+}
+
+#hebergementsMarseille
+{
+    background-color: #f2f2f2 ;
+    width: 60%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+.hebergements_simples
+{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.mini_bloc_H
+{
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 1px;
+    width: 157px;
+    height: 128px;
+}
+
+
+.image_H
+{
+    width: 150%;
+    height: 90%;
+    
+}
+
+.image_H img
+{
+    width: 66%;
+    height: 64%; 
+    border-top-left-radius:12px ;
+    border-top-right-radius: 12px;
+    padding-top: 3px;
+    padding-right: 1px;
+    padding-left: 1px;
+    object-fit: cover ;
+}
+
+
+.descriptif_H
+{
+    font-size: 11px;
+    color: black;
+    padding-left: 8px;
+}
+
+.descriptif_H p
+{
+    line-height: 0px;
+}
+
+.descriptif_P h3
+{
+    font-size: 12px;
+    margin-top: 3px;
+    line-height: 8px;
+}
+
+.etoilepleine
+{
+    color: #0065FC;
+    font-size: 8px;
+    padding-top: 10px;
+}
+
+.etoilevide
+{
+    color: rgb(221, 217, 217);
+    font-size: 8px;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+
+
+

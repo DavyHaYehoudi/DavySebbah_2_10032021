@@ -6,6 +6,12 @@
     margin-left: 30px;
 }
 
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header
 {
     display: flex;
@@ -20,14 +26,31 @@ header img
 
 nav ul
 {
-    display: flex;
-    
+    display: flex;   
 }
 
 nav li 
 {
 	list-style: none;
-	padding-left: 30px;
+	padding-left: 85px;
+    font-size: 0.9em;
+    padding-right: 0px;
+}
+
+.surlignement
+{
+    text-decoration: overline;
+    
+}
+
+.activites a:link
+{
+    color: black;
+}
+
+.s_inscrire
+{
+    font-weight: bold;
 }
 
 #annonces h1
@@ -40,7 +63,7 @@ nav li
 #annonces h3
 {
     font-size: 12px;
-    line-height: 6px;
+    line-height: 9px;
     font-weight: normal;
 }
 
@@ -49,15 +72,16 @@ nav li
     display: flex;
     align-items :center;
     border: 1px #f2f2f2 solid;
-    width: 278px;
+    width: 280px;
     border-radius: 10px;
+    margin-top: 18px;
     
     
 }
 
 .pointeur
 {
-    background-color:#f2f2f2 ;
+    background-color:  #f2f2f2;;
     font-size: 0.8em;
     height: 23px;
     width: 35px;
@@ -71,9 +95,17 @@ nav li
 .champ
 {
     height: 29px;
+    width: 145px;
     margin-right: 0;
-    border:hidden;
-    
+    border:hidden;    
+    font-size: 0.8em;
+}
+
+input::placeholder
+{
+    color: black;
+    font-weight: bold;
+    padding-left: 6px;
 }
 
 .boutton
@@ -106,7 +138,7 @@ nav li
 {
     display: flex;
     align-items: center;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
     line-height: 1px;
    
     
@@ -138,19 +170,6 @@ nav li
 }
 
 
-/*#filtres span
-{
-    margin-right: 30px;
-}*/
-
-
-/*.filtre-rubrique h3
-{   
-    
-    padding-right: 40px;
-    padding-left: 0px;
-    
-}*/
 
 #filtres h3
 {
@@ -211,6 +230,8 @@ nav li
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
+    
+    
 }
 
 
@@ -236,36 +257,43 @@ nav li
 #hebergementsMarseille
 {
     background-color: #f2f2f2 ;
-    width: 60%;
-    height: 400px;
+    width: 59%;
+    height: 415px;
     border-radius: 20px;
 }
 
+#hebergementsMarseille h1
+{
+    font-size: 17px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
 
 .hebergements_simples
-{
-  
+{  
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
-.mini_bloc_H
+.mini_bloc_H 
 {
     background-color: white;
     border-radius: 12px;
-    padding-left: 1px;
+    padding: 0 3px 3px 3px;
     width: 157px;
-    height: 128px;
+    height: 128px;  
+    margin-bottom: 20px;
+    margin-left: 14px;
+    margin-right: 8px;
 }
 
 
 .image_H
 {
     width: 150%;
-    height: 90%;
-    
+    height: 90%;   
 }
 
 .image_H img
@@ -288,16 +316,16 @@ nav li
     padding-left: 8px;
 }
 
-.descriptif_H p
-{
-    line-height: 0px;
-}
-
-.descriptif_P h3
+.descriptif_H h3
 {
     font-size: 12px;
     margin-top: 3px;
     line-height: 8px;
+}
+
+.descriptif_H p
+{
+    line-height: 0px;
 }
 
 .etoilepleine
@@ -318,6 +346,69 @@ a
     text-decoration:none;
 }
 
+.afficherplus a:link
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+    padding-left: 30px;
+}
 
 
+#hebergementsPopulaires
+{
+    background-color: #f2f2f2;
+    width: 370px;
+    margin-left: 20px;
+}
 
+.les_plus_populaires h1
+{
+    font-size: 17px;
+    padding-left: 25px;
+    padding-top: 10px;
+}    
+
+.les_plus_populaires
+{
+    display: flex;
+}
+
+
+.mini_bloc_P
+{
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 1px;
+    width: 157px;
+    height: 128px;
+    
+    
+}
+
+
+.image_P
+{
+    width: 50%;
+    height: 90%;
+    
+}
+
+.image_P img
+{
+    width: 66%;
+    height: 64%; 
+    border-top-left-radius:12px ;
+    border-top-right-radius: 12px;
+    padding-top: 3px;
+    padding-right: 1px;
+    padding-left: 1px;
+    object-fit: cover ;
+}
+
+.descriptif_P h3
+{
+    font-size: 12px;
+    margin-top: 3px;
+    line-height: 8px;
+}

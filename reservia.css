@@ -1,7 +1,7 @@
 
 #container
 { 
-	max-width: 1100px;
+	max-width: 1000px;
     margin-left: 30px;
     margin-top: 40px;
 }
@@ -12,6 +12,9 @@ main
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/*organisation du Header*/
 
 header
 {
@@ -25,11 +28,14 @@ header img
     height: 29px;
 }
 
+/*Agencement du menu des liens*/
+
 nav ul
 {
     display: flex;
     padding-left: 50px;
-    padding-right: 120px  
+    padding-right: 120px;
+    margin-top: 10px;  
 }
 
 nav li 
@@ -78,6 +84,7 @@ nav li
     line-height: 6px;
 }
 
+/*Titres introductifs*/
 #annonces h3
 {
     font-size: 12px;
@@ -85,6 +92,7 @@ nav li
     font-weight: normal;
 }
 
+/*Aire de recherche*/
 #recherches
 {
     display: flex;
@@ -138,16 +146,7 @@ input::placeholder
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/*Aire des filtres*/
 #filtres
 {
     display: flex;
@@ -218,15 +217,7 @@ input::placeholder
     color: rgb(233, 64, 233);
 }
 
-
-
-
-
-
-
-
-
-
+/*Ligne informations*/
 
 #informations
 {
@@ -254,10 +245,11 @@ input::placeholder
     line-height: 2.2em;
 }
 
+/*Section du premier bloc d'images des hébergements à Marseille*/
 #hebergementsMarseille
 {
     background-color: #f2f2f2 ;
-    width: 57%;
+    width: 59%;
     height: 415px;
     border-radius: 20px;
 }
@@ -265,7 +257,7 @@ input::placeholder
 #hebergementsMarseille h1
 {
     font-size: 17px;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-top: 10px;
 }
 
@@ -276,7 +268,7 @@ input::placeholder
     justify-content: center;
 }
 
-
+/*Agencement de chaque petite photo des hébergements à Marseille avec son descritptif*/
 .mini_bloc_H 
 {
     background-color: white;
@@ -297,6 +289,7 @@ input::placeholder
     height: 90%;   
 }
 
+/*Agencement de l'image elle-même des hébergements à Marseille*/
 .image_H img
 {
     width: 66%;
@@ -329,6 +322,7 @@ input::placeholder
     line-height: 0px;
 }
 
+/*Style des étoiles pour les deux blocs*/
 .etoilepleine
 {
     color: #0065FC;
@@ -347,12 +341,13 @@ a
     text-decoration:none;
 }
 
+/*Caractéristiques du renvoi 'Afficher plus'*/
 .afficherplus a:link
 {
     font-size: 13px;
     font-weight: bold;
     color: black;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .afficherplus :visited
@@ -365,10 +360,13 @@ color: black;
     font-weight: bold;
 }
 
+
+/*Section du deuxième bloc d'images des hébergements à Marseille les plus populaires*/
+
 #hebergementsPopulaires
 {
     background-color: #f2f2f2;
-    width: 285px;
+    width: 275px;
     height: 415px;
     margin-left: 28px;
     border-radius: 20px;
@@ -396,6 +394,7 @@ margin-right: 10px;
     padding-right: 26px;
 }
 
+/*Agencement de chaque petite photo des hébergements à Marseille les plus populaires avec son descritptif*/
 
 .mini_bloc_P
 {
@@ -418,6 +417,8 @@ margin-right: 10px;
     height: 104px;  
     display: flex;
 }
+
+/*Agencement de l'image elle-même des hébergements à Marseille les plus populaires*/
 
 .image_P img
 {
@@ -453,6 +454,7 @@ margin-right: 10px;
     margin-left: 10px;
 }
 
+/*Section du dernier bloc d'images des activités à Marseille*/
 
 .activitesMarseille 
 {
@@ -485,6 +487,8 @@ margin-right: 10px;
     border-top-right-radius: 15px;
     object-fit: cover;   
 }
+
+/*Organisation des 4 images superposées des activités à Marseille*/
 
 .superposees1
 {
@@ -523,8 +527,10 @@ margin-right: 10px;
     margin-bottom: 30px;  
     border-radius: 15px;
     box-shadow: 1px 2px 3px #f2f2f2;
-    height: 125px;
+    height: 140px;
 }
+
+/*Agencement des 4 images superposées des activités à Marseille*/
 
 #fort
 {
@@ -550,9 +556,11 @@ margin-right: 10px;
 #parc
 {
     width: 200px;
-    height: 90px;
+    height: 100px;
     object-fit: cover;
 }
+
+/*Agencement des images superposées elles-mêmes des activités à Marseille*/
 
 .photos_paysage img
 {
@@ -573,27 +581,20 @@ margin-right: 10px;
 }
 
 
-
-
-
-
-
-
-
-
+/*Organisation du Footer*/
 
 footer
 {
     display: flex;  
     background-color: #f2f2f2;
-    width: 1100px;
+    width: 100%;
     height: 200px;
 }
 
 footer h3
 {
     font-size: 14px;
-    margin : 30px 250px 0 30px;
+    margin : 35px 235px 0 30px;
 }   
 
 footer li
@@ -606,7 +607,48 @@ footer ul
 {
     list-style: none;
     padding-left: 30px;
+    padding-right: 145px;
     margin-top: 10px;
 }
 
 
+/*Organisation du Responsive*/
+
+
+@media screen and (max-width: 992px) /*Ordinateur*/
+{
+    #container
+    {
+        color: red;
+    }
+}
+
+
+@media screen and (max-width: 768px)  /*Tablette*/
+{
+    #container
+    {
+        color: green;
+    }
+}
+
+
+@media screen and (max-device-width: 480px)  /*Smartphone*/
+{
+    #container
+    {
+        color:saddlebrown;
+    }
+
+    nav ul 
+    {
+        flex-direction: column-reverse;
+    }
+
+    nav li 
+    {
+        display: flex;
+    }
+    
+
+}

@@ -1326,7 +1326,7 @@ footer li
 
     #container
     {
-        margin-left: 2px;
+        margin-left: 8px;
         width: auto;
     }
 
@@ -1411,6 +1411,11 @@ footer li
         font-size: 1.6em;
     }
 
+    .phrase-infos
+    {
+        line-height: 1.2em;
+    }
+
     #filtres h3
     {
       width: 100%;
@@ -1420,12 +1425,6 @@ footer li
     #filtres
     {
         margin-right: 40px;
-        padding-right: 100px;
-    }
-
-    .onglet4
-    {
-        padding-right: 10px;
     }
 
     #activite_a_Marseille:nth-child(4)

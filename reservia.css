@@ -357,12 +357,12 @@ a {
     padding: 0 0 2px 2px;
     width: 80%;
     height: 160px;  
-    margin: 30px 0px 30px 50px;
+    margin: 30px 0px 30px 45px;
     box-shadow: 1px 1px 5px rgb(194, 192, 192);
 }
 
 .image_P {
-    width: 90%;
+    width: 100%;
     height: 183px;  
     display: flex;
 }
@@ -370,17 +370,17 @@ a {
 /*Agencement de l'image elle-même des hébergements à Marseille les plus populaires*/
 
 .image_P img {
-    width: 45%;
+    width: 200px;
     height: 85%; 
     border-top-left-radius:16px ;
     border-bottom-left-radius: 16px;
-    padding: 3px 1px 0 1px;
+    padding: 3px 0 0 1px;
     object-fit:cover ; 
 }
 
 .descriptif_P h3 {
     font-size: 1.1em;
-    margin: 10px 10px 0 0;
+    margin: 10px 0em 0 0;
     color: black;
 }
 
@@ -390,7 +390,8 @@ a {
 }
 
 .descriptif_P {
-    margin-left: 10px;
+   margin: 0 0 0 0.5em;
+   width: 42%;
 }
 
 /*Section du dernier bloc d'images des activités à Marseille*/
@@ -411,7 +412,6 @@ a {
     box-shadow: 1px 2px 3px #f2f2f2;
     border-radius: 15px; 
 }
-
 
 .photos_portrait img {
     width: 100%;
@@ -614,7 +614,7 @@ footer li {
     
     .mini_bloc_H   {
         border-radius: 16px;
-        padding: 0 3px 3px 3px;
+        padding: 0 2px 3px 3px;
         width: 27%;
         height: 330px;  
         margin: 30px;
@@ -895,6 +895,10 @@ footer li {
         height: 108%; 
         border-top-left-radius:16px ;
         border-bottom-left-radius: 16px;
+    }
+    
+    .descriptif_P p {
+        font-size: 1.1em;
     }
 
     #activiteMarseille  {

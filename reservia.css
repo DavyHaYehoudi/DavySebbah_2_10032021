@@ -4,6 +4,8 @@
    */
 #container {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    max-width: 3000px;
+    margin: auto;
 }
 
 
@@ -18,14 +20,9 @@ header img {
     width: 10%;
 }
 
-main,
 header {
     margin: 0 3% 0 3%;
     display: flex;
-}
-
-main {
-    flex-wrap: wrap;
 }
 
 /*Agencement du menu des liens*/
@@ -72,6 +69,10 @@ nav li {
     color: #0065FC;
 }
 
+#presentation {
+    margin: 0 20px;
+}
+
 #annonces h1 {
     font-size: 1.5em;
     margin: 30px 0 0 0;
@@ -88,9 +89,9 @@ nav li {
 #recherches {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border: 2px #f2f2f2 solid;
-    width: 95%;
-    height: 35px;
+    width: 25%;
     border-radius: 10px;
     margin: 30px 0 30px 0;
     cursor: pointer;
@@ -98,19 +99,13 @@ nav li {
 
 .pointeur {
     background-color: #f2f2f2;
-    ;
-    font-size: 1.1em;
-    height: 1.6em;
-    width: 4em;
-    text-align: center;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
-    padding-top: 10px;
+    padding: 22px;
+    font-size: calc(1.2rem + (2 - 1.2) * ((100vw - 320px) / (3000 - 320)));
 }
 
 .champ {
-    height: 1.8em;
-    width: 530px;
     border: hidden;
     font-size: 1em;
     outline: none;
@@ -123,15 +118,14 @@ input::placeholder {
 }
 
 .bouton {
-    height: 25px;
+    display: flex;
+    align-items: center;
     background-color: #0065FC;
-    text-align: center;
     color: white;
     font-size: 1em;
-    width: 35%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-top: 10px;
+    padding: 15px;
 }
 
 .loupe {
@@ -234,12 +228,19 @@ input::placeholder {
     line-height: 2.2em;
 }
 
+/* Bloc hébergements à Marseille et logements populaires */
+.block-heb-pop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*Section du premier bloc d'images des hébergements à Marseille*/
 #hebergementsMarseille {
     background-color: #f2f2f2;
     width: 65%;
     height: 700px;
     border-radius: 20px;
+    margin: 20px;
 }
 
 #hebergementsMarseille h1 {
@@ -343,11 +344,13 @@ a {
 .les_plus_populaires h1 {
     font-size: 1.5em;
 }
-.heb-pop-block-title{
-display: flex;
-align-items: baseline;
-justify-content: space-around;
+
+.heb-pop-block-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
 }
+
 .picto {
     font-size: 1.6em;
     display: inline-block;
@@ -554,22 +557,6 @@ footer li {
         line-height: 1.5em;
     }
 
-    #recherches {
-        width: 75%;
-        height: 48px;
-        border-radius: 10px;
-        margin: 30px 0 30px 0;
-    }
-
-    .pointeur {
-        font-size: 1.3em;
-        height: 2em;
-        width: 3em;
-        border-top-left-radius: 9px;
-        border-bottom-left-radius: 9px;
-        padding-top: 10px;
-    }
-
     .champ {
         height: 2em;
         width: 530px;
@@ -581,7 +568,6 @@ footer li {
     .bouton {
         height: 42px;
         font-size: 1.3em;
-        width: 35%;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         padding-top: 10px;
@@ -814,6 +800,10 @@ footer li {
 
 /*Ecran largeur standard*/
     {
+    .pointeur {
+        padding: 13px
+    }
+
     h1 {
         font-size: 1.8em;
     }
@@ -990,25 +980,11 @@ footer li {
 
     #recherches {
         width: 90%;
+        margin: 30px auto;
     }
-
-    .champ {
-        width: 350%;
-        font-size: 1em;
-    }
-
-    .bouton {
-        width: 30%;
-        margin-left: 55%;
-    }
-
     .pointeur {
-        width: 10%;
-        height: 31px;
-        font-size: 1.2em;
-        padding-top: 5px;
+        padding: 13px
     }
-
     #filtres {
         flex-wrap: wrap;
     }
@@ -1037,7 +1013,7 @@ footer li {
 
     #hebergementsMarseille {
         width: auto;
-        margin-top: 40px ;
+        margin-top: 40px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -1056,6 +1032,7 @@ footer li {
 
     .descriptif_P p {
         text-align: start;
+        margin-bottom: -5px;
     }
 
     #activiteMarseille {
@@ -1106,7 +1083,6 @@ footer li {
     }
 
     #container {
-        /* margin-left: 8px; */
         width: auto;
     }
 
@@ -1152,32 +1128,25 @@ footer li {
         height: 5px;
     }
 
-    #recherches {
-        width: 90%;
-        height: 38px;
+    #presentation {
+        margin: 0 5px;
     }
-
+    .pointeur {
+        padding: 8px
+    }
     .bouton {
         display: none;
     }
 
+
     .loupe {
         display: flex;
-        margin-left: 60%;
-        height: 28px;
+        align-items: center;
         border-radius: 10px;
         background-color: #0065FC;
         color: white;
-        width: 6%;
-        padding: 10px 4% 0 5%;
-        font-size: 1.3em;
-    }
-
-    .pointeur {
-        width: 50%;
-        height: 34px;
-        padding: 8px 0 0 0;
-        font-size: 1.6em;
+        padding: 10px;
+        font-size: 1.1em;
     }
 
     .phrase-infos {
@@ -1214,7 +1183,7 @@ footer li {
     .mini_bloc_H {
         width: 96%;
         height: 270px;
-        margin:10px auto
+        margin: 10px auto
     }
 
     .image_H {
